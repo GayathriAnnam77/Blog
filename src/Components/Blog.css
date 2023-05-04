@@ -1,0 +1,12 @@
+.page{
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    height: 100vh;
+    margin: 15%;
+}
+
+.page p{
+   
+    color:blueviolet ;
+}

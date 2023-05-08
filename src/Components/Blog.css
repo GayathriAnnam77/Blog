@@ -1,12 +1,17 @@
 .page{
-    justify-content: center;
-    align-items: center;
+    
     background-color: white;
     height: 100vh;
-    margin: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .page p{
    
-    color:blueviolet ;
+    color:rgb(9, 9, 9) ;
+}
+
+.acom{
+    display: 'flex';
+    align-items: center;
 }

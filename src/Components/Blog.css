@@ -1,43 +1,105 @@
-
 .page {
-    top: 0;
-    right: 0;
-    float:left;
-    margin-top: 3%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    margin-right: 5%;
+    margin: 3% 5%;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 5px;
-     padding-left: 70px;
-    padding-right: 70px;
-    font-size:17px;
+    padding: 70px;
+    font-size: 17px;
   }
-
-    .page p{
-   
-        color:rgb(9, 9, 9) ;
-        text-align: justify;
-        
+  
+  .page p {
+    color: rgb(9, 9, 9);
+    text-align: justify;
+  }
+  
+  .page h1, .page h2 {
+    font-family: cursive;
+  }
+  
+  .page img {
+    padding: 2%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .page li {
+    text-align: start;
+  }
+  
+  .page {
+    margin: 3% 5%;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 70px;
+    font-size: 17px;
+  }
+  
+  .page p {
+    color: rgb(9, 9, 9);
+    text-align: justify;
+  }
+  
+  .page h1, .page h2 {
+    font-family: cursive;
+  }
+  
+  .page img {
+    padding: 2%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .page li {
+    text-align: start;
+  }
+  
+  .acom {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media only screen and (max-width: 768px) {
+    .acom {
+      flex-direction: column;
     }
+  }
+  
+  /* Add a media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .page {
+      padding: 40px;
+      font-size: 15px;
+    }
+    
     .page h1 {
-        font-family: cursive;
+      font-size: 24px;
     }
+    
     .page h2 {
-        font-family: cursive;
+      font-size: 20px;
     }
-    .page img{
-        padding: 2%;
+    
+    .page img {
+      padding: 1%;
     }
-    .page li{
-        text-align: start;
-    }
-    .acom{
-        display: 'flex';
-        align-items: center;
-    }
-
-
+  }
   
-  
+  /* Add a media query for mobile devices */
+  @media screen and (max-width: 768px) {
+    .page {
+      padding: 40px;
+      font-size: 15px;
+    }
+    
+    .page h1 {
+      font-size: 24px;
+    }
+    
+    .page h2 {
+      font-size: 20px;
+    }
+    
+    .page img {
+      padding: 1%;
+    }
+  }

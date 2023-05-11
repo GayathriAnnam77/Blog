@@ -7,6 +7,7 @@ import classes from "../class.jpg"
 import events from "../events.jpg"
 import food from "../food.jpg"
 import transloc from "../transloc.jpg"
+import airport from "../airport.jpg"
 import "./Blog.css";
 
 
@@ -15,7 +16,7 @@ function Blog() {
 
   return (
     <div className='page'  >
-    
+     
       <img src={tamucc} alt="University" style={{width:"1200px"}}/>
       <h1>Hello, I am Gayathri Annam</h1>
       <h3>Master of Computer Science Student at Texas A&M University</h3>
@@ -40,25 +41,33 @@ function Blog() {
 
       </div>
       <h2>1. Accommodation & PickUps</h2>
-      <div className='acom' style={{display:"flex"}}>
-      <img src={shores} alt="Accommodation" style={{height:"250px"}} />
-      <p>
-        When you join, the ISA team will ask you about your accommodation preferences and who you want to room with.
-        Don't worry if you don't know anyone yet, ISA will help you find a group.
+<div className='acom' style={{display:"flex", flexWrap: "wrap"}}>
+  <div style={{flex: "1"}}>
+    <img src={shores} alt="Accommodation" style={{height:"250px"}} />
+   </div>
+   <div style={{flex: "1"}}>
 
-        Once you've confirmed that you're joining the university, ISA will book an apartment for you before your arrival
-        so you can move in hassle-free. Most Indian students stay in The Shores community, Plam's, and South Bay,
-        which are all close to the university. Plus, you'll have access to free bus transportation with your college
-        student ID.
+    <img src={airport} alt="Pick Up" style={{height:"250px", marginLeft:"20px"}} />
 
-        To help with your arrival, ISA will share a Google sheet where you can provide your flight information.
-        Someone from the ISA committee will then pick you up from the Corpus Christi airport or bus stop and drop
-        you off at your apartment.
+  </div>
+    <p>
+      When you join, the ISA team will ask you about your accommodation preferences and who you want to room with.
+      Don't worry if you don't know anyone yet, ISA will help you find a group.
 
-        Best of all, these accommodations and pickups are completely free! ISA has funding to cover these expenses,
-        so you don't have to worry about any extra charges.
-      </p>
-    </div>
+      Once you've confirmed that you're joining the university, ISA will book an apartment for you before your arrival
+      so you can move in hassle-free. Most Indian students stay in The Shores community, Plam's, and South Bay,
+      which are all close to the university. Plus, you'll have access to free bus transportation with your college
+      student ID.
+
+      To help with your arrival, ISA will share a Google sheet where you can provide your flight information.
+      Someone from the ISA committee will then pick you up from the Corpus Christi airport or bus stop and drop
+      you off at your apartment.
+
+      Best of all, these accommodations and pickups are completely free! ISA has funding to cover these expenses,
+      so you don't have to worry about any extra charges.
+    </p>
+</div>
+
 
 <h2>2. Academics & Courses</h2>
 <div>
@@ -107,57 +116,62 @@ It's truly an unforgettable experience that makes you feel right at home.
 <p>When it comes to Indian food, we are lucky to have an Indian supermarket in Corpus Christi that stocks all the essential Indian groceries. And if you're looking for some delicious Indian cuisine, we have some great Indian restaurants in the area, such as Pavani Express, SV Caterings, and Persis Indian Grill. In addition, some restaurants like Sufi Kabob and Ginger Cafe & Grill also serve Indian food.</p>
 <p>I've tried every kind of variety besides Indian food  If you try Mexican food, it will taste slightly Indian and spicy. I'm listing some of my favorite restaurants. There may be many superb restaurants, but i have only visited a few numbers. I will list my favorites below.
 </p>
-<div className='acom' style={{display:"flex"}}>
-<p>
-<ul> <strong>For authentic Mexican cuisine:  </strong><br/>
+<div className='acom' style={{display:"flex", flexWrap: "wrap"}}>
+  <div style={{flex: "1"}}>
+    <p>
+      <ul> <strong>For authentic Mexican cuisine:  </strong><br/>
+        <li>On the border (taste their salsa and nachos)</li>
+        <li>Chuys </li>
+      </ul>
 
-<li>On the border (taste their salsa and nachos)</li>
-<li>Chuys </li>
-</ul>
+      <ul> <strong>For Chinese: </strong><br/>
+        (Try kungpao; it's delicious if you're interested in Chinese cuisine. Additionally, wherever you go, you can make it your own by requesting the staff to add more pepper and chilli flakes and make it more spicy. This will give us our Indian taste.)
+        <li>Panda Express </li>
+        <li>JaJa Cafe</li>
+        <li>DAO Authentic Asian Cusine</li>
+      </ul>
 
-<ul> <strong>For Chinese: </strong><br/>
-
-(Try kungpao; it's delicious if you're interested in Chinese cuisine. Additionally, wherever you go, you can make it your own by requesting the staff to add more pepper and chilli flakes and make it more spicy. This will give us our Indian taste.)
-
-<li>Panda Express </li>
-<li>JaJa Cafe</li>
-<li>DAO Authentic Asian Cusine</li>
-</ul>
-
-<ul> Other than these : <br/>
-  <li>Applebee's</li>
-  <li>Buffalo Wild Wings</li>
-  <li>Starbucks (my favorite. Java Chip Frappuccino, I will die for this.)</li>
-  <li>Chili's</li>
-  <li>MOD Pizza (here we can customize our pizza, and we will have many options for toppings)</li>
-  <li>Islander Teriyaki (which is very near to the college, try salad there, it will be really tasty)</li>
-  <li>La Frutera (check this for fresh fruit juice)</li>
-  <li>Baskin Robbins and Marble Slab for ice cream with many topping options available.</li>
-  <li>IHOP (for breakfast options)</li>
-  <li>Cheesecake Factory</li>
-  <li>Olive Garden (I love Italian pasta here, but it will be cheesy)</li>
-  <li>Vue Tea (must try taro milk boba tea here)</li>
-</ul>
-
-</p>
-<img src={food} alt="" style={{height:'600px'}}/>
-
+      <ul> Other than these : <br/>
+        <li>Applebee's</li>
+        <li>Buffalo Wild Wings</li>
+        <li>Starbucks (my favorite. Java Chip Frappuccino, I will die for this.)</li>
+        <li>Chili's</li>
+        <li>MOD Pizza (here we can customize our pizza, and we will have many options for toppings)</li>
+        <li>Islander Teriyaki (which is very near to the college, try salad there, it will be really tasty)</li>
+        <li>La Frutera (check this for fresh fruit juice)</li>
+        <li>Baskin Robbins and Marble Slab for ice cream with many topping options available.</li>
+        <li>IHOP (for breakfast options)</li>
+        <li>Cheesecake Factory</li>
+        <li>Olive Garden (I love Italian pasta here, but it will be cheesy)</li>
+        <li>Vue Tea (must try taro milk boba tea here)</li>
+      </ul>
+    </p>
+  </div>
+  <div style={{flex: "1"}}>
+    <img src={food} alt="" style={{width: '100%'}}/>
+  </div>
 </div>
+
+
 <h2>6. Transportation</h2>
-<div style={{display:"flex"}}>
-<div>
+<div className='acom' style={{display:"flex", flexWrap: "wrap"}}>
+
+<div  style={{flex: "2"}}>
 <img src={bus} alt="transportation" style={{height:'200px', width:"800px"}}/>
 <p>When it comes to transportation, we're pretty lucky as TAMUCC students. With our student ID cards, we get to ride the bus for free! Yes, you read that right - no charges at all! This means you can easily explore the entire city of Corpus Christi without worrying about transportation costs.You can also track the current location of the bus by using the Trans Loc app. And other than bus facility, there are other options available such as Uber and Lyft.
 
 </p>
 </div>
+<div  style={{flex: "1"}}>
 <img src={transloc} alt="transportation" style={{height:'400px'}}/>
+</div>
 </div>
 
 <p>  <strong>Overall</strong>, this place is super friendly. When we plan to come from India, we usually think that the initial days will be tough until we settle in. However, after being here, I'm sure you won't feel that way. Seniors will take care of everything like family, from accommodation to settling into college, explaining course work, and guiding you on professors and courses. Setting up a bank account and every other needful thing, they will guide you. If you genuinely want to learn something, take Mamta Yadav and K Demir's classes. They are tough, but you will undoubtedly learn a lot. I learned a great deal during my master's program. In every course, it is mandatory to give presentations, and by the end of my master's, I lost stage fear. I worked as a GA from the first day of my master's program. Getting a GA is difficult, but once you get one, maintaining it by following rules and timing is crucial here. We celebrate all events together. It is very enjoyable, and the cost of living in Corpus Christi is low. So you can save a good amount of money as there is not much to do in Corpus Christi. You will find beaches, parks, many restaurants. All Indians live in the same community, so you will never feel homesick. You can expect many assignments and projects, but it is common in every university. I think I have covered everything😀.
 
 If you have any doubts, feel free to reach out to me.</p>
-    </div>
+</div>
+  
   );
 }
 
